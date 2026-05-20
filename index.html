@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Przewodniki po Ziemi Kłodzkiej</title>
+
+  <!-- Ikona karty przeglądarki -->
+  <link rel="icon" type="image/jpeg" href="https://img.magnific.com/premium-wektory/ikona-gory-wysokie-gory-z-ostrym-wierzcholkiem_379823-4611.jpg">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Tło strony */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url('https://polska-org.pl/foto/5139/Mapy_powiatu_klodzkiego_5139535.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.5;
+      z-index: -2;
+    }
+
+    /* Przyciemnienie dla lepszej czytelności */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      margin-bottom: 50px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .link-card {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      padding: 28px;
+      transition: all 0.3s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-6px);
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    .link-card a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: bold;
+      display: block;
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    @media (max-width: 768px) {
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .intro {
+        font-size: 1rem;
+      }
+
+      .link-card {
+        padding: 22px;
+      }
+
+      .link-card a {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Przewodniki po Ziemi Kłodzkiej</h1>
+
+    <p class="intro">
+      Poniżej znajdziesz linki do opisów spacerów i tras po malowniczej Ziemi Kłodzkiej.
+    </p>
+
+    <div class="links">
+
+      <div class="link-card">
+        <a href="https://margom23.github.io/Przewodnik-zieleniec/" target="_blank">
+          Spacer Lasówka-Zieleniec-Orlica-Masarykova Chata
+        </a>
+      </div>
+
+      <div class="link-card">
+        <a href="https://margom23.github.io/przewodnik/" target="_blank">
+          Spacer Marianówka-Igliczna-Międzygórze-Krowiarki (Marcinków-Konradów-Rogóżka-Puchaczówka)
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      © Marcel Goman
+    </div>
+
+  </div>
+
+</body>
+</html>
